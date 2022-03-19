@@ -15,7 +15,6 @@ button.addEventListener('click', () => {
     const url = `https://api.qrserver.com/v1/create-qr-code/?size=${size}&data=${value}`;
     img.src = url;
     const a = document.querySelector('a');
-    a.setAttribute('href', `blob[${url}]`);
     a.style.display = 'block';
     newUrl = url;
   } else {
